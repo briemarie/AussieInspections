@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Report</title>
+    <link href="vendor.css" rel="stylesheet">
+    <script src="vendor.js" class="no-pdf"></script>
+    <script src="report.js" class="no-pdf" id="report-script"></script>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <script type="text/javascript" class="no-pdf">
+      var reportView = new ReportView({ chrome: true}, PDF.component() );
+      reportView.render(report);
+    </script>
+  </body>
+</html>
