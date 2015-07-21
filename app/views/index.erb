@@ -55,7 +55,7 @@
                 </div>
               </div>
             </section>
-            <section>
+            <section id="title-page">
               <h4>How to complete this report</h4>
               <p>
                 1.Three copies of this condition report are filled out and signed by
@@ -147,7 +147,7 @@
                 www.tenants.org.au
               </p>
             </section>
-            <section>
+            <section id="title-page">
               <table>
                 <colgroup>
                   <col class="master">
@@ -179,33 +179,5 @@
       var reportView = new ReportView({ chrome: true}, PDF.component() );
       reportView.render(report);
     </script>
-
-    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;">
-    </div>
-    <div id="lightbox" class="lightbox" style="display: none;">
-      <div class="lb-outerContainer">
-        <div class="lb-container">
-          <img class="lb-image" src="">
-          <div class="lb-nav">
-            <a class="lb-prev" href=""></a>
-            <a class="lb-next" href=""></a>
-          </div>
-          <div class="lb-loader">
-            <a class="lb-cancel"></a>
-          </div>
-        </div>
-      </div>
-      <div class="lb-dataContainer">
-        <div class="lb-data">
-          <div class="lb-details">
-            <span class="lb-caption"></span>
-            <span class="lb-number"></span>
-          </div>
-          <div class="lb-closeContainer">
-            <a class="lb-close"></a>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
