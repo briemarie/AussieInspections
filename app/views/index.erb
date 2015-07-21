@@ -2,6 +2,8 @@
 <html>
   <head>
     <link href="/css/vendor.css" rel="stylesheet">
+    <script src="/js/vendor.js" class="no-pdf"></script>
+    <script src="/js/report.js" class="no-pdf" id="report-script"></script>
   </head>
 
   <body>
@@ -23,7 +25,6 @@
             </div>
           </nav>
         </header>
-
 
         <div class="report-wrapper">
           <div class="main">
@@ -54,10 +55,59 @@
               </div>
             </section>
             <section>
+              <h4>How to complete this report</h4>
+              <p>
+                1.Three copies of this condition report are filled out and signed by
+                the landlord or the landlord's agent.
+                <br>
+                2.Before the tenancy begins, the landlord or the landlord's agent
+                must inspect the residential premises and record the condition
+                of the premises by indicating whether the particular room item
+                is clean, undamaged and working by placing "Y" (YES) or "N"
+                (N0) in the appropriate column (see example below). Where
+                necessary, comments should be included in the report. The
+                landlord or the landlord's agent must also indicate "yes" or "no"
+                in relation to the matters set out under the headings "Health
+                issues" and "Communications facilities".
+                <br>
+                3.If the tenant has agreed to pay for water usage charges under
+                the residential tenancy agreement, the landlord or landlord's
+                agent must also indicate whether the residential premises have
+                the required water efficiency measures.
+                <br>
+                4.Two copies of the report which have been filled out and
+                signed by the landlord or the landlord's agent must be given
+                to the tenant before or when the tenant signs the agreement.
+                The landlord or landlord's agent keeps the third copy.
+                <br>
+                5. As soon as possible after the tenant signs the agreement, the
+                tenant must inspect the residential premises and complete the
+                tenant section of the condition report. The tenant indicates
+                agreement or disagreement with the condition indicated by
+                the landlord or landlord's agent by placing "Y" (YES) or "N"
+                (N0) in the appropriate column and by making any appropriate
+                comments on the form. The tenant may also comment on the
+                matters under the headings "Health issues", "Communications
+                facilities" and "Water efficiency devices".
+                <br>
+                6. The tenant must return one copy of the completed condition
+                report to the landlord or landlord's agent within 7 days after
+                receiving it and is to keep the second copy.
+                <br>
+                7. At, or as soon as practicable after, the termination of the tenancy
+                agreement, both the landlord and tenant should complete the
+                copy of the condition report that they retained, indicating the
+                condition of the premises at the end of the tenancy. This should
+                be done in the presence of the other party, unless the other party
+                has been given a reasonable opportunity to be present and has
+                not attended the inspection.
+              </p>
+            </section>
+            <section>
               <table>
                 <colgroup>
-                  <col class="master">
-                  <col>
+                  <col class="master"></col>
+                  <col class="master"></col>
                 </colgroup>
                 <thead>
                   <tr>
@@ -67,7 +117,7 @@
                 <tbody>
                   <tr class="item">
                     <td>General Comments</td>
-                    <td class="notes cell-group-start"></td>
+                    <td>Tenant Comments</td>
                   </tr>
                 </tbody>
               </table>
@@ -77,8 +127,6 @@
       </div>
     </article>
 
-    <script src="/js/vendor.js" class="no-pdf"></script>
-    <script src="/js/report.js" class="no-pdf" id="report-script"></script>
     <script type="text/javascript" class="no-pdf">
       var reportView = new ReportView({ chrome: true}, PDF.component() );
       reportView.render(report);
